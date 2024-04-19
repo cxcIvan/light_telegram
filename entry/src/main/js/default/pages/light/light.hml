@@ -1,0 +1,9 @@
+<div id="window" class="container" @swipe="onSwipe">
+<!--    倒计时-->
+    <text style="color: white; font-size: 38px;" if="{{ countdownTime > 0 }}">{{ countdownTime }}</text>
+
+    <div if="{{status == 'dark'}}" class="dark">
+    </div>
+    <div if="{{status =='light'}}" class="light">
+    </div>
+</div>
